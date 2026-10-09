@@ -1,4 +1,4 @@
-# 🚀   Lvan Panel روی Railway (روش PasarGuard)
+# 🚀 Lvan Panel روی Railway (روش PasarGuard)
 
 این ریپازیتوری دقیقاً به همان روش ریپازیتوری `PasarGuard` ساخته شده:
 به‌جای اینکه سورس Lvan را داخل ریپو کپی (vendor) کنیم، `Dockerfile` در
@@ -23,7 +23,7 @@
 
    اگر تنظیم نکنید، بعداً از Console سرویس همین دستور را بزنید:
    ```bash
-   marzban-cli admin create --sudo
+   lvan-cli admin create --sudo
    ```
 5. دیتابیس پیش‌فرض SQLite است. اگر می‌خواهید از Postgres پلاگین Railway استفاده کنید،
    متغیر `SQLALCHEMY_DATABASE_URL` را در Variables ست کنید.
@@ -31,5 +31,5 @@
 ## نکات
 
 - پورت را Railway خودش از طریق `$PORT` تزریق می‌کند؛ نیازی به تنظیم دستی نیست.
-- برای تغییر نسخه‌ی Lvan که کلون می‌شود، آرگومان build به نام `MARZBAN_REF`
+- برای تغییر نسخه‌ی Lvan که کلون می‌شود، آرگومان build به نام `LVAN_REF`
   را در `railway.toml` / تنظیمات Build اضافه کنید (پیش‌فرض: `master`).
